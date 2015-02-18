@@ -245,7 +245,8 @@
 
 
 /* OMITSIS ADDONS */
-
-.timeline{border-left: 1px; border-bottom:1px; border-color: black; border-style: solid; }
-.timeline tr td {padding-left: 25px;}
-.timeline tr td p{margin-bottom: -10px; text-align:center; background-color:white; z-index: top;}
+.timeline {margin-left:25px; margin-bottom:25px;}
+.timeline{border-left: 1px; border-color: black; border-style: solid; width:25px;}
+.timeline tr td {padding-top:25px;}
+.timeline tr td.ralla{padding-left: 25px; border-bottom:1px;  border-color: black; border-style: solid; }
+.timeline tr td p{margin-bottom: -10px; text-align:center; background-color:white; }
