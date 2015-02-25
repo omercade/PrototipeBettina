@@ -31,7 +31,7 @@
 						<div class="12u">
 
 							<!-- Logo -->
-								<h1><a href="#" id="logo">Halcyonic</a></h1>
+								<h1><a href="#" id="logo">Timeline</a></h1>
 							
 							<!-- Nav -->
 							<nav id="nav">								
@@ -105,8 +105,9 @@
 
 										</p>
 										<a href="#" class="bordered-feature-image"><img src="images/p1.png" alt="" /></a>
+										<p class="imgfooter">Das Hugenotten-Kreuz</p> 
 										<a href="#" class="bordered-feature-image"><img src="images/p1b.JPG" alt="" /></a>
-									
+										<p class="imgfooter">Calvin, der Glaubensvater der Hugenotten, auf einem Relief an der Französischen Friedrichstadtkirche</p>
 									</section>
 									
 									<section id="1685">
@@ -118,8 +119,11 @@
 
 										</p>
 										<a href="#" class="bordered-feature-image"><img src="images/p3.jpg" alt="" /></a>
+										<p class="imgfooter">Das Edikt vom Potsdam </p>
 										<a href="#" class="bordered-feature-image"><img src="images/p3b.gif" alt="" /></a>
+										<p class="imgfooter">So zogen die französischen Glaubensflüchtlinge nach Osten</p>
 										<a href="#" class="bordered-feature-image"><img src="images/p4.JPG" alt="" /></a>
+										<p class="imgfooter">Der Kurfürst begrüßt die Flüchtlinge in Brandenburg</p>
 									
 									</section>
 									<section id="1688">
@@ -131,7 +135,9 @@
 
 										</p>
 										<a href="#" class="bordered-feature-image"><img src="images/p5.JPG" alt="" /></a>
+										<p class="imgfooter">Eine im Original erhaltene Sänfte aus dem Hugenottenmuseum</p>
 										<a href="#" class="bordered-feature-image"><img src="images/p6.JPG" alt="" /></a>
+										<p class="imgfooter">Dieser Maulbeerbaum nahe der Friedrichstraße ist über 250 Jahre alt</p>
 									
 									</section>
 									<section id="1700">
@@ -139,11 +145,12 @@
 											<h3 >Um 1700</h3>
 										</header>
 										<p>
-									
+									Die Franzosen brachten 46 neue Berufe nach Brandenburg. In Berlin wurden 21 neue Zünfte gegründet. Ihre Maschinen, insbesondere Webstühle und Werkzeuge zur Metallbearbeitung, waren den deutschen um Jahrzehnte voraus.  
 
 										</p>
 										
 									<a href="#" class="bordered-feature-image"><img src="images/p7.jpg" alt="" /></a>
+									<p class="imgfooter">Hugenotten präsentieren ihre Handwerkskunst…</p>
 										
 									</section>
 									
@@ -158,6 +165,7 @@
 										</p>
 										
 										<a href="#" class="bordered-feature-image"><img src="images/p8.jpg" alt="" /></a>
+										<p class="imgfooter">Auch der berühmte Maler Daniel Chodowiecki stammte von Hugenotten ab</p>
 									</section>
 									
 									
@@ -169,58 +177,17 @@
 				</div>
 			</div>
 
-		<!-- Footer -->
-			<div id="footer-wrapper">
-				<footer id="footer" class="container">
-					<div class="row">
-						<div class="12u">
-						
-							<!-- Links -->
-								<section>
-									<h2>Uber AppInsMuseum</h2>
-									<div>
-										<div class="row">
-											<div class="3u">
-												<ul class="link-list last-child">
-													<li><a href="#">Omitsis</a></li>
-													<li><a href="#">Bettina</a></li>
-													<li><a href="#">Berlin</a></li>
-													<li><a href="#">Barcelona</a></li>
-												</ul>
-											</div>
-									
-										</div>
-									</div>
-								</section>
+	<div data-include="footer"></div>
 
-						</div>
-						<div class="12u">
-							
-							<!-- Blurb -->
-								<section>
-									<h2>An Informative Text Blurb</h2>
-									<p>
-										Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu 
-										varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi, 
-										dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh 
-										lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
-									</p>
-								</section>
-						
-						</div>
-					</div>
-				</footer>
-			</div>
-
-		<!-- Copyright -->
-			<div id="copyright">
-				&copy; Omitsis. All rights reserved.
-			</div>
 
 	  <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize();
+        	$('div[data-include]').each(function() {
+       
+			    $(this).load( 'includes/'+ $(this).attr('data-include') + '.html').trigger('create');
+			});
+			            app.initialize();
         </script>
 	</body>
 </html>
