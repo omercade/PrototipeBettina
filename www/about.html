@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Appinsmuseum</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header-wrapper">
+				<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+						
+							<!-- Logo -->
+								<h1><a href="#" id="logo">AppInsMuseum</a></h1>
+							
+							<!-- Nav -->
+							
+							<nav id="nav">				
+								<a href="index.html" class="active">Welcome</a>						
+								<a href="about.html" class="active">Über das Museum</a>
+								<a href="multimedia.html">Multimedia Tour </a>
+								<a href="timeline.html">Timeline</a>
+								<a href="service.html">Service</a>
+								<!--
+								<a href="#three">Quizz</a>
+								<a href="#three">Veranstaltungskalender</a>								
+								<a href="#four">Contact</a>					
+								-->						
+							</nav>
+							
+
+						</div>
+					</div>
+				</header>
+			
+				
+			</div>
+
+		
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Box #1 -->
+									<section>
+										<br/>
+										<header>
+											<h2>Hugenottenmuseum Berlin</h2>
+											<h3>Potsdam</h3>
+										</header>
+										<p>
+											Durch das Edikt von Potsdam, das der Große Kurfürst 1685 erlassen hatte, fanden in den Jahren darauf etwa 20 000 französische Glaubensflüchtlinge in Berlin und der Mark Brandenburg Aufnahme. Ihre Geschichte wird im Hugenottenmuseum anhand von Urkunden, Gemälden, Stichen, Büchern, Handschriften und Medaillen erzählt. Träger des Museums, das 1935 im Französischen Dom an Gendarmenmarkt eingerichtet wurde, ist das Konsistorium der Französischen Kirche zu Berlin. Die Ausstellung geht ausführlich auf die Gründe ein, die zur Flucht der Protestanten aus Frankreich führten, und zeichnet die Entstehung der französischen Siedlungen in der Mark Brandenburg nach. Deutlich wird, welchen Anteil die handwerklich gut ausgebildeten Einwanderer am Aufstieg Brandenburg-Preußens im 18. Jahrhundert hatten.
+										</p>
+										<a href="#" class="bordered-feature-image"><img src="images/interior.jpg" alt="" /></a>
+
+									
+										<ul class="check-list">
+											<li>bildergalerie</li>
+											<li>kommende ausstellungen</li>
+										</ul>
+									</section>
+
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<div data-include="footer"></div>
+
+	  <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+        $('div[data-include]').each(function() {
+       
+			    $(this).load( 'includes/'+ $(this).attr('data-include') + '.html').trigger('create');
+			});
+            app.initialize();
+        </script>
+	</body>
+</html>

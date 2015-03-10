@@ -252,3 +252,27 @@
 .timeline tr td p{margin-bottom: -10px; text-align:center; background-color:white; }
 
 .imgfooter {text-align:center; font-style: italic; color: #B8B8B8; }
+.tabletext{ padding-left: 15px;  vertical-align: bottom; width:200px }
+
+.button-big2
+	{
+		display: inline-block;
+		width:200px;
+		background: #ed391b;
+		margin:10px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 1em;
+		font-weight: 300;
+		padding: 15px 45px 15px 45px;
+		outline: 0;
+		border-radius: 10px;
+		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.75), inset 0px 2px 0px 0px rgba(255,192,192,0.5), inset 0px 0px 0px 2px rgba(255,96,96,0.85), 3px 3px 3px 1px rgba(0,0,0,0.15);
+		background-image: -moz-linear-gradient(top, #ed391b, #ce1a00);
+		background-image: -webkit-linear-gradient(top, #ed391b, #ce1a00);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ed391b), to(#ce1a00));
+		background-image: -ms-linear-gradient(top, #ed391b, #ce1a00);
+		background-image: -o-linear-gradient(top, #ed391b, #ce1a00);
+		background-image: linear-gradient(top, #ed391b, #ce1a00);
+		text-shadow: -1px -1px 1px rgba(0,0,0,0.5);
+	}
